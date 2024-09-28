@@ -8,7 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
-
+       
       textDecoration: ['hover', 'focus'], 
       underline: {
         DEFAULT: 'underline',
@@ -18,6 +18,19 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes: {
+        floatCircle:  {
+          '0%': { transform: 'translate(0, 0)' },
+          '25%': { transform: 'translate(10px, -10px)' },
+          '50%': { transform: 'translate(0, -20px)' },
+          '75%': { transform: 'translate(-10px, -10px)' },
+          '100%': { transform: 'translate(0, 0)' },
+        },
+      },
+      animation: {
+        float: 'floatCircle 8s ease-in-out infinite', // Movimento suave com ease-in-out
+      },
+      
     },
   },
   plugins: [],

@@ -8,20 +8,20 @@ import Produtos from "./section/Produtos/page";
 export default function Home() {
   return (
     <div className="w-full px-16">
-      <main className="pt-36">
-        <div id="scroolInicio ">
+      <main>
+        <div className="pt-40" id="scroolInicio">
           <Inicio />
         </div>
 
-        <div id="scroolProdutos">
+        <div className="pt-40" id="scroolProdutos">
           <Produtos />
         </div>
 
-        <div id="scroolContatos">
+        <div className="pt-40" id="scroolContatos">
           <Contatos />
         </div>
 
-        <div id="scroolLoja">
+        <div className="pt-40 mb-96" id="scroolLoja">
           <Loja />
         </div>
       </main>
