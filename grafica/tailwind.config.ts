@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+
+      textDecoration: ['hover', 'focus'], 
+      underline: {
+        DEFAULT: 'underline',
+      },
+      
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
